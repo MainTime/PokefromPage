@@ -1,6 +1,5 @@
 body {
   font-family: 'Roboto', sans-serif;
-  z-index: 900;
 }
 
 ul {
@@ -48,9 +47,11 @@ h {
 
 #showcase{
   min-height:450px;
-  background:url('/computer-keyboard-34153.jpg') 0 -100px;
+  background:url('computer-keyboard-34153.jpg') 0 -100px;
+   background-size: cover;
+ background-repeat: no-repeat;
   text-align:center;
   color:#ffffff;
-  z-index: 850;
+  z-index: -1;
 }
   
