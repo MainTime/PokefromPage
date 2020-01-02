@@ -44,4 +44,11 @@ h {
     margin-right: -50%;
     transform: translate(-50%, -50%) 
 }
+
+#showcase{
+  min-height:450px;
+  background:url('../img/coding.jpg') 0 -100px;
+  text-align:center;
+  color:#ffffff;
+}
   
