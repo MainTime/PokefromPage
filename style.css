@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+    z-index: 900;
 }
 
 ul {
@@ -50,5 +51,6 @@ h {
   background:url('../img/coding.jpg') 0 -100px;
   text-align:center;
   color:#ffffff;
+    z-index: 850;
 }
   
