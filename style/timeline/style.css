@@ -5,19 +5,23 @@ body{
 }
 
 .container{
-  width: 1200px;
-  margin: 200px auto;
+    width: auto;
+    margin: 200px auto;
+}
+
+.econtainer{
 }
 
 .timeline{
-  counter-reset: year 2013;
+  counter-reset: month 0;
   position: relative;
 }
 
 .timeline li{
   list-style: none;
   float: left;
-  width: 33.3333%;
+  width: 40%;
+  height: 150px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -29,8 +33,8 @@ ul:nth-child(1){
 }
 
 .timeline li:before{
-  counter-increment: year;
-  content: counter(year);
+  counter-increment: month;
+  content: counter(month);
   width: 50px;
   height: 50px;
   border: 3px solid #4caf50;
@@ -45,29 +49,58 @@ ul:nth-child(1){
   cursor: pointer;
 }
 
-.timeline li:after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: grey;
-  top: 25px;
-  left: -50%;
-  z-index: -999;
-  transition: all ease-in-out .3s;
-}
 
 .timeline li:first-child:after{
   content: none;
 }
-.timeline li.active{
+.timeline li.finished{
   color: #555555;
 }
-.timeline li.active:before{
+.timeline li.finished:before{
   background: #4caf50;
+  border-color: #4caf50;
   color: #F1F1F1;
 }
 
-.timeline li.active + li:after{
+.timeline li.finished + li:after{
   background: #4caf50;
+}
+
+.timeline li.rc{
+  color: #555555;
+}
+.timeline li.rc:before{
+  background: #B050AB;
+  border-color: #B050AB;
+  color: #F1F1F1;
+}
+
+.timeline li.rc + li:after{
+  background: #B050AB;
+}
+
+.timeline li.beta{
+  color: #555555;
+}
+.timeline li.beta:before{
+  background: #4F54AF;
+  border-color: #4F54AF;
+  color: #F1F1F1;
+}
+
+.timeline li.beta + li:after{
+  background: #4F54AF;
+}
+
+.timeline li.wip{
+  color: #555555;
+}
+.timeline li.wip:before{
+  background: #572A27;
+  border-color: #572A27;
+  color: #F1F1F1;
+}
+
+.timeline li.wip + li:after{
+  background: #572A27;
 }

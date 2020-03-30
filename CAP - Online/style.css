@@ -1,0 +1,79 @@
+body {
+  font-family: 'Roboto Black', sans-serif;
+  background-color: #1e1e1e;
+  color: #FFFFFF;
+  background:url('../computer-keyboard-34153.jpg') 0 0px;
+   background-size: cover;
+ background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Roboto Black', sans-serif;
+  font-size:  20em;
+}
+h2 {
+  font-family: 'Roboto Black', sans-serif;
+  font-size:  3em;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+font-size:  1.5em;
+ width: 50%;
+ margin-right: : 45%;
+ margin-left:  5%;
+ text-align: center;
+}
+
+a {
+  max-width: 25%;
+  margin: auto;
+  background-color: #eb4034;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 16px;
+  text-align: center;
+}
+
+input[type=file] + label {
+  max-width: 25%;
+  margin: auto;
+  margin-top: 1%;
+  background-color: #eb4034;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px;
+  text-align: center;
+}
+
+input[type=file] + label:hover {
+  background-color: #eb4c34;
+}
+
+a:hover {
+  background-color: #eb4c34;
+}
+
+input[type=file] {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+input[type=text] {
+  width: 30%;
+  margin-left: 35%;
+  padding: 12px 20px;
+  margin-top: 1%;
+  box-sizing:border-box;
+}
